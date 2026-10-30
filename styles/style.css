@@ -1,0 +1,141 @@
+/* abstracts */
+/* base */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --primary-color: #2f654c;
+  --primary-color-hover: #2c9b67;
+  --text-primary-color: #262C28;
+  --text-secund-color: #757A74;
+  --text-secund: #FFF;
+  --bg-color: #F7F7F3;
+  --bg-secund: #FFF;
+  --border-primary: #E2E5DE;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+/* components */
+.header {
+  background-color: var(--bg-secund);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 56px;
+  border-bottom: 1px solid var(--border-primary);
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header__logo-title {
+  font-size: 1.4375rem;
+  color: var(--text-primary-color);
+}
+
+.header__btn-plus {
+  font-size: 1.125rem;
+}
+
+.btn {
+  all: unset;
+  background-color: var(--primary-color);
+  color: var(--text-secund);
+  border-radius: 8px;
+  padding: 0 18px;
+  height: 44px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  transition: background-color 300ms ease, scale 300ms ease;
+}
+.btn:hover {
+  background-color: var(--primary-color-hover);
+}
+.btn:active {
+  scale: 0.9;
+}
+
+.layout {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 56px;
+  gap: 32px;
+}
+
+.catalog {
+  display: grid;
+  gap: 24px;
+}
+
+.cart {
+  display: grid;
+  gap: 20px;
+  padding-top: 4px;
+  width: 25%;
+  max-width: 320px;
+}
+
+.cart__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart__title {
+  color: var(--text-primary-color);
+  font-size: 1.3125rem;
+  font-weight: 600;
+}
+
+.cart__order {
+  padding: 2px 20px 22px;
+  background-color: var(--bg-secund);
+  border: 1px solid var(--border-primary);
+  border-radius: 12px;
+}
+
+.purchase-total {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 22px;
+}
+
+.purchase-total__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-primary-color);
+  font-weight: 600;
+}
+
+.purchase-total__price-text {
+  font-size: 1rem;
+}
+
+.purchase-total__true-price {
+  font-size: 1.5625rem;
+}
+
+.purchase-total__information {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--text-secund-color);
+}/*# sourceMappingURL=style.css.map */

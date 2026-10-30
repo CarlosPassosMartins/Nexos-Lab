@@ -1,0 +1,24 @@
+.header{
+    background-color: var(--bg-secund);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 56px;
+    border-bottom: 1px solid var(--border-primary);
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header__logo-title{
+    font-size: rem(23);
+    color: var(--text-primary-color);
+}
+
+.header__btn-plus{
+    font-size: rem(18);
+}

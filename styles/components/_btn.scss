@@ -1,0 +1,28 @@
+.btn{
+    all: unset;
+    background-color: var(--primary-color);
+    color: var(--text-secund);
+    border-radius: 8px;
+    padding: 0 18px;
+    height: 44px;
+    font-size: rem(14);
+    font-weight: 600;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+
+    transition: 
+        background-color 300ms ease,
+        scale 300ms ease
+        ;
+    &:hover{
+        background-color: var(--primary-color-hover);
+    }
+
+    &:active{
+        scale: 0.9;
+    }
+}

@@ -9,4 +9,10 @@
 
 body{
     background-color: var(--bg-color);
+    height: 100dvh;
+    transition: all 300ms ease;
+}
+
+#btn-theme::after{
+    content: var(--theme-icon);
 }

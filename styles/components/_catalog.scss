@@ -1,8 +1,22 @@
 .catalog{
-    display: grid;
+    padding: 40px 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 24px;
 }
 
+.catalog__title{
+    width: 100%;
+    color: var(--text-primary-color);
+}
+
 .catalog__grid{
-    
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, 320px);
+    justify-content: center;
+    @include breakpoint('lg'){
+        justify-content: start;
+    }
 }
